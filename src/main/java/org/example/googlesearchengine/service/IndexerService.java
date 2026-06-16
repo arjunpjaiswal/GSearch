@@ -9,6 +9,7 @@ import org.example.googlesearchengine.repository.IndexEntryRepository;
 import org.example.googlesearchengine.util.TfIdfCalculator;
 import org.example.googlesearchengine.util.Tokenizer;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;  // ← ADD THIS
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -28,6 +29,7 @@ public class IndexerService {
     private final TfIdfCalculator tfIdfCalculator;
     private final SnippetService snippetService;
 
+    @Transactional  // ← ADD THIS
     public void indexPage(String url, String title, String content) {
 
         Optional<Document> existing = documentRepository.findByUrl(url);
