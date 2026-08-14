@@ -7,7 +7,7 @@ Built as a deep-dive learning project to understand how search engines actually 
 ---
 ## Live Demo
 
-🔗 [https://your-render-url.onrender.com](https://your-render-url.onrender.com)
+🔗 [https://gsearch-19c9.onrender.com/](https://gsearch-19c9.onrender.com/)
 ## Features
 
 - **Multithreaded BFS web crawler** — Jsoup-based, 10-thread `ExecutorService` pool, politeness delay, duplicate-URL detection
