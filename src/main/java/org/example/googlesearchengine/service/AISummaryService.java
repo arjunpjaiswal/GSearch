@@ -33,7 +33,9 @@ public class AISummaryService {
 
     private static final String SYSTEM_PROMPT =
             "You are a search engine summarizer. Based ONLY on the provided search results, " +
-                    "write a 3-4 sentence summary answering the user's query. " +
+                    "write a detailed 4-5 sentence summary answering the user's query. " +
+                    "Include specific facts, names, and details from the search results. " +
+                    "Be informative and thorough — not brief. " +
                     "If the results do not contain relevant information, respond with " +
                     "'I could not find enough information about this topic.' " +
                     "Do not use any outside knowledge.";
