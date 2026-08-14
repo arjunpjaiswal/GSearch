@@ -77,7 +77,21 @@ public class CrawlerService {
                 && !url.endsWith(".pdf")
                 && !url.endsWith(".jpg")
                 && !url.endsWith(".png")
-                && isEnglishWikipedia(url);  // add this
+                && isEnglishWikipedia(url)
+                // ADD THESE:
+                && !url.contains("/Talk:")
+                && !url.contains("/Template:")
+                && !url.contains("/Template_talk:")
+                && !url.contains("/Special:")
+                && !url.contains("/Help:")
+                && !url.contains("/Wikipedia:")
+                && !url.contains("/File:")
+                && !url.contains("/Category:")
+                && !url.contains("/Portal:")
+                && !url.contains("action=edit")
+                && !url.contains("action=history")
+                && !url.contains("action=info")
+                && !url.contains("oldid=");
     }
 
     private boolean isEnglishWikipedia(String url) {
