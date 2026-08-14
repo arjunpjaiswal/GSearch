@@ -5,7 +5,9 @@ A search engine built from scratch in Spring Boot — a multithreaded BFS web cr
 Built as a deep-dive learning project to understand how search engines actually work under the hood, rather than configuring an existing search platform.
 
 ---
+## Live Demo
 
+🔗 [https://your-render-url.onrender.com](https://your-render-url.onrender.com)
 ## Features
 
 - **Multithreaded BFS web crawler** — Jsoup-based, 10-thread `ExecutorService` pool, politeness delay, duplicate-URL detection
